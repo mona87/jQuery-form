@@ -1,0 +1,20 @@
+{
+  "name": "jquery form",
+  "version": "0.0.0",
+  "authors": [
+    "Ramona Bellamy <bellamy2727@yahoo.com>"
+  ],
+  "description": "homework",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jQuery": "~2.1.4"
+  }
+}
