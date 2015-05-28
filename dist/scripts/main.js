@@ -32,7 +32,27 @@ function check(e){
 
 	
 	if(checkEmail(e) && checkSite(e)){
-		showMsg(e);
+
+		if(validator.isNull($name) && validator.isNull($message) ){
+			$nameEr.show();
+			$msg.show();
+			e.preventDefault();
+		}
+		else if(validator.isNull($name)){
+			$nameEr.show();
+			e.preventDefault();
+		}
+		else if (validator.isNull($message)){
+			$msg.show();
+			e.preventDefault();
+			
+		}else{
+
+			showMsg(e);
+		}
+		
+	}else{
+		e.preventDefault();
 	}
 
 }
@@ -62,7 +82,7 @@ function checkSite(e){
 	}
 	else {
 
-		console.log('web');
+		
 		return true
 	}
 }
